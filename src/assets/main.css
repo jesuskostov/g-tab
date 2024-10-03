@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: rgb(229, 236, 240);
+  background: radial-gradient(
+    circle,
+    rgba(229, 236, 240, 1) 0%,
+    rgba(137, 170, 194, 1) 70%
+  );
+}
+
+.custom-shadow {
+  -webkit-box-shadow: 0px -12px 26px 21px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px -12px 26px 21px rgba(255, 255, 255, 1);
+  box-shadow: 0px -12px 26px 21px rgba(255, 255, 255, 1);
+}
+
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}

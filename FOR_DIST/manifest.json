@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Notes New Tab",
+  "description": "A simple notes app that replaces the new tab page.",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["identity", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "oauth2": {
+    "client_id": "316803096936-u0974kg8ij3tovvmdhhofsi7pnr3cflp.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  }
+}
